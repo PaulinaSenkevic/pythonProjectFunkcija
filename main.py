@@ -185,3 +185,62 @@ skaiciai = [8, 7, 9]
 zmones = ['Asta', 'Inga', 'Giedrius', 'Justas']
 isvesti_masyva('Skaiciai', skaiciai)
 isvesti_masyva('Zmones', zmones)
+
+def zodziai(komentaras, masyvas, ilgis):
+    print(komentaras)
+    for elementas in masyvas:
+        print('-', elementas + ': ilgis =', len(elementas))
+
+
+zodzis = ['kate', 'langas', 'duris', 'stalas', 'lempa']
+ilgis = len(zodzis)
+zodziai(komentaras='zodziai', masyvas=zodzis,ilgis=ilgis)
+
+print('------14 uzduotis-----')
+# Susikurkite funkciją, kuri per argumentus priimtų skaičių masyvą.
+# Funkcija turėtų atspausdinti visus skaičius, šalia jų išvedant to skaičiaus kvadratą ir  jį padalintą iš dviejų.
+# Už funkcijos ribų susikurkite du skaičių masyvus ir užpildykite jį duomenimis. Iškvieskite funkciją du kartus, kiekvieną kartą
+# perduodant skirtingą turimą masyvą.
+
+def masyva(masyvas):
+    for i in masyvas:
+        print(f'{i}, {i**2}, {i/2}')
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+numeriai = [5, 18,34,15, 82]
+masyva(masyvas=numbers)
+masyva(masyvas=numeriai)
+
+print('------15 uzduotis-----')
+# Susikurkite funkciją, kuri per argumentus priimtų pažymių masyvą, bei  studento vardą su pavarde. Funkcija turėtų išvesti studento vardą ir pavardę, jo pažymius.
+# Taip pat, suskaičiuoti vidurkį, bei jį išvesti.
+# Už funkcijos ribų susikurkite reikiamus kintamuosius ir masyvus, arba
+# objektus studentų pažymiams saugoti ir užpildykite juos duomenimis.
+# Iškvieskite šią funkciją perduodant visus reikalingus duomenis.
+
+def studentoInfo(name, surname, masyvas):
+    print(f'studento informacija')
+    print(f'Vardas: {name}')
+    print(f'Pavarde: {surname}')
+    print('Pazymiai')
+    for i in masyvas:
+        print(i)
+    vidurkis = sum(masyvas)/len(masyvas)
+    print(f'vidurkis = {vidurkis} ')
+
+
+vardas = 'Paulius'
+pavarde = 'Paulauskas'
+pazymiai = [10, 7, 8, 3, 5]
+
+studentoInfo(vardas, pavarde, pazymiai)
+
+print('------16 uzduotis-----')
+def maxSkaicius(skaiciai):
+    maxNumber = max(skaiciai)
+    print(f'Didziausiai skaicius masyve: {maxNumber}')
+
+
+numbers = [7, 100, 54, 39, 107]
+maxSkaicius(skaiciai)
+
