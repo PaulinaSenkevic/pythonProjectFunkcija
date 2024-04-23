@@ -129,8 +129,59 @@ skaiciai(sk1, sk2)
 print('------12 uzduotis-----')
 def suma(sk1, sk2):
     print(f'{sk1} + {sk2} =', sk1 + sk2)
+def skirtumas(sk1, sk2):
+    print(f'{sk1} - {sk2} =', sk1 - sk2)
 
-sk1 = random.randint(1, 10)
-sk2 = random.randint(1, 10)
-for i in range(4):
+def sandauga(sk1, sk2):
+    print(f'{sk1} * {sk2} =', sk1 * sk2)
+def dalmenis(sk1, sk2):
+    print(f'{sk1} / {sk2} =', sk1 / sk2)
+
+def funkcija(sk1, sk2):
+    sk1 = random.randint(1, 10)
+    sk2 = random.randint(1, 10)
     suma(sk1, sk2)
+    skirtumas(sk1, sk2)
+    dalmenis(sk1, sk2)
+    sandauga(sk1, sk2)
+
+funkcija(sk1, sk2)
+
+print('------11 uzduotis-----')
+# Sukurkite funkciją, kuri per argumentus gautų automobilių duomenis (markė, modelis, gamybos metai, darbinis tūris).
+# Ši funkcija turėtų šiuosduomenis išvesti kaip nors gražiai formatuotai. Iškvieskite šią funkciją du
+# kartus, perduodant skirtingus duomenis jai.
+
+def automobilis(marke, modelis, metai, turis):
+    print(f'marke: {marke}')
+    print(f'modelis: {modelis}')
+    print(f'metai: {metai}')
+    print(f'turis: {turis}')
+def automobilisOne(marke, modelis, metai, turis):
+    print(f'Parduodamas automobilis {marke}, kurio modelis yra {modelis}. Automobilis yra beveik naujas, {metai} gamybos.Automobilio variklio turis yra {turis} litrai')
+
+automobilis(marke='BMW', modelis='X7', metai =2020, turis=3 )
+print()
+automobilis(marke='Audi', modelis='Q7', metai =2018, turis=3 )
+print()
+automobilisOne(marke='BMW', modelis='X7', metai =2020, turis=3 )
+print()
+automobilisOne(marke='Audi', modelis='Q7', metai =2018, turis=3 )
+
+print('------13 uzduotis-----')
+# Susikurkite funkciją, kuri per argumentus priimtų žodžių masyvą.
+# Funkcijoje išveskite visus žodžius iš masyvo atskirose eilutėse,
+# nurodant žodžio ilgį (simbolių kiekį).
+# Už funkcijos ribų susikurkite žodžių masyvą ir
+# užpildykite jį duomenimis.
+# Iškvieskite sukurtą funkciją perduodant turimą masyvą.
+
+def isvesti_masyva(komentaras, masyvas):
+    print(komentaras)
+    for elementas in masyvas:
+        print('-', elementas)
+    print()
+skaiciai = [8, 7, 9]
+zmones = ['Asta', 'Inga', 'Giedrius', 'Justas']
+isvesti_masyva('Skaiciai', skaiciai)
+isvesti_masyva('Zmones', zmones)
