@@ -94,7 +94,14 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1713860109084</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="uzduociu pratesimas">
+      <option name="closed" value="true" />
+      <created>1713876173454</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1713876173454</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

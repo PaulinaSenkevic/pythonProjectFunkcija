@@ -236,11 +236,39 @@ pazymiai = [10, 7, 8, 3, 5]
 studentoInfo(vardas, pavarde, pazymiai)
 
 print('------16 uzduotis-----')
-def maxSkaicius(skaiciai):
-    maxNumber = max(skaiciai)
-    print(f'Didziausiai skaicius masyve: {maxNumber}')
+def find_max_number(array):
+    max_number = max(array)
+    print(f"Didžiausias skaičius masyve: {max_number}")
+
+def generate_random_numbers(array, count):
+    for _ in range(count):
+        array.append(random.randint(1, 100))
+
+# Sukuriam tris tuščius masyvus
+array1 = []
+array2 = []
+array3 = []
+
+# Generuojam atsitiktinius skaičius kiekvienam masyvui
+generate_random_numbers(array1, random.randint(5, 10))
+generate_random_numbers(array2, random.randint(5, 10))
+generate_random_numbers(array3, random.randint(5, 10))
+
+# Išvedam atsitiktinių skaičių masyvus
+print("Atsitiktiniai skaičių masyvai:")
+print("Masyvas 1:", array1)
+print("Masyvas 2:", array2)
+print("Masyvas 3:", array3)
+
+# Ieškom didžiausio skaičiaus kiekvienam masyvui
+print("\nDidžiausi skaičiai:")
+find_max_number(array1)
+find_max_number(array2)
+find_max_number(array3)
+
+print('------17 uzduotis-----')
+def sakinys(darbas):
+    return f'As dirbu {darbas}'
 
 
-numbers = [7, 100, 54, 39, 107]
-maxSkaicius(skaiciai)
 
