@@ -267,8 +267,39 @@ find_max_number(array2)
 find_max_number(array3)
 
 print('------17 uzduotis-----')
-def sakinys(darbas):
+def sakinys():
     return f'As dirbu {darbas}'
 
+darbas = ('programuotoju')
+print(sakinys())
 
+def uzduotis(a, b):
+    return a+b/a
+
+sk1 = 15
+sk2 = 67
+print(uzduotis(sk1, sk2))
+print(uzduotis(5, 10))
+
+print('------18 uzduotis-----')
+def randomas():
+    return random.randint(1, 100)
+
+for i in range(3):
+    print(randomas())
+
+print('------19 uzduotis-----')
+
+def studentas(vardas, vidurkis):
+    return f'Studentas {vardas} turi vidurki {vidurkis}'
+
+Tomas = 'Tomas'
+skaicius = 7
+print(studentas(Tomas, skaicius))
+vardas = ('Tomas')
+vidurkis = 3
+print(studentas(vardas, vidurkis))
+print(studentas('Arnas', '9.5'))
+
+print('------20 uzduotis-----')
 
